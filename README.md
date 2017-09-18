@@ -7,7 +7,7 @@ Gradle, Spring Boot, Embeded Tomcat, Spring Data, Hibernate, Embedded In-Memory 
 
 ## Features:
 - Metadata Driven Resource Types and Resource Properties
-- Enahnced Security Model
+- Enhanced Security Model
 
 ## Setup/Run:
 - `gradlew bootRun` - starts Application Server on 8080 port and H2 Database server on 9092 TCP port with Web UI on 8082.
