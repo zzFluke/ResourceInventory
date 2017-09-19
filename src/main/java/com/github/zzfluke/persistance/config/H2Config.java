@@ -5,11 +5,14 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 
+import javax.sql.DataSource;
 import java.sql.SQLException;
 
 @Configuration
-public class H2ServerConfiguration {
+public class H2Config {
 
     // TCP port for remote connections, default 9092
     @Value("${h2.tcp.port:9092}")
@@ -25,7 +28,7 @@ public class H2ServerConfiguration {
      * Connect to "jdbc:h2:tcp://localhost:9092/mem:testdb", username "sa", password empty.
      */
     @Bean
-    @ConditionalOnExpression("${h2.tcp.enabled:true}")
+    @ConditionalOnExpression("${h2.tcp.enabled:false}")
     public Server h2TcpServer() throws SQLException {
         return Server.createTcpServer("-tcp", "-tcpAllowOthers", "-tcpPort", h2TcpPort).start();
     }
@@ -39,5 +42,13 @@ public class H2ServerConfiguration {
     @ConditionalOnExpression("${h2.web.enabled:true}")
     public Server h2WebServer() throws SQLException {
         return Server.createWebServer("-web", "-webAllowOthers", "-webPort", h2WebPort).start();
+    }
+
+    @Bean
+    public DataSource dataSource() {
+        EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
+        return builder.setType(EmbeddedDatabaseType.H2)
+                .addScript("create_schemas.sql")
+                .build();
     }
 }
