@@ -3,11 +3,11 @@
 # Demo Web Application for Resource Inventory
 
 ## Developed with:
-Gradle, Spring Boot, Embedded Tomcat, Spring Data, Hibernate, Embedded (In-Memory) H2 Database, Apache Shiro, JOOQ, Swagger, [Spring Data REST]
+Gradle, Spring Boot, Embedded Tomcat, Spring Data, Spring Data REST, JPA, Hibernate, Embedded (In-Memory) H2 Database, Apache Shiro, JOOQ, Swagger, 
 
 ## Features:
 - Metadata Driven Resource Types and Resource Properties
-- Enhanced Security Model
+- Enhanced, customizable and flexible Security Model
 
 ## Setup/Run:
 - `gradlew bootRun` - starts Application Server on 8080 port and H2 Database server on 9092 TCP port with Web UI on 8082.

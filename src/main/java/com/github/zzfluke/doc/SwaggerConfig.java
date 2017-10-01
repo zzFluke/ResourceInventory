@@ -13,6 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
+//@Import({SpringDataRestConfiguration.class}) https://github.com/springfox/springfox/issues/1957
 public class SwaggerConfig implements WebMvcConfigurer {
 
     @Override
