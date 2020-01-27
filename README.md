@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/zzFluke/ResourceInventory.svg?branch=master)](https://travis-ci.org/zzFluke/ResourceInventory) [![Coverage Status](https://coveralls.io/repos/github/zzFluke/ResourceInventory/badge.svg?branch=master)](https://coveralls.io/github/zzFluke/ResourceInventory?branch=master)
+[![Build Status](https://travis-ci.org/zzFluke/ResourceInventory.svg?branch=spring_security)](https://travis-ci.org/zzFluke/ResourceInventory) [![Coverage Status](https://coveralls.io/repos/github/zzFluke/ResourceInventory/badge.svg?branch=spring_security)](https://coveralls.io/github/zzFluke/ResourceInventory?branch=master)
 
 # Demo Web Application Project for Resource Inventory
 
