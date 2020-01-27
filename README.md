@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/zzFluke/ResourceInventory.svg?branch=spring_security)](https://travis-ci.org/zzFluke/ResourceInventory) [![Coverage Status](https://coveralls.io/repos/github/zzFluke/ResourceInventory/badge.svg?branch=spring_security)](https://coveralls.io/github/zzFluke/ResourceInventory?branch=master)
+[![Build Status](https://github.com/zzFluke/ResourceInventory/workflows/Java%20CI/badge.svg?branch=spring_security)](https://github.com/zzFluke/ResourceInventory/actions?query=workflow%3A%22Java+CI%22+branch%3Aspring_security) [![Coverage Status](https://coveralls.io/repos/github/zzFluke/ResourceInventory/badge.svg?branch=spring_security)](https://coveralls.io/github/zzFluke/ResourceInventory?branch=spring_security)
 
 # Demo Web Application Project for Resource Inventory
 
