@@ -3,7 +3,7 @@
 # Demo Web Application Project for Resource Inventory
 
 ## Developed with:
-Gradle, Spring Boot, Embedded Tomcat, Spring Data, Spring Data REST, JPA, Hibernate, Embedded (In-Memory) H2 Database, Apache Shiro, JOOQ, Swagger, 
+Gradle, Spring Boot, Embedded Tomcat, Spring Data, Spring Data REST, Spring Security, JPA, Hibernate, Embedded (In-Memory) H2 Database, JOOQ, Swagger ...
 
 ## Features:
 - Metadata Driven Resource Types and Resource Properties
