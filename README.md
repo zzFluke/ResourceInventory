@@ -1,9 +1,9 @@
-![Java CI](https://github.com/zzFluke/ResourceInventory/workflows/Java%20CI/badge.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/github/zzFluke/ResourceInventory/badge.svg?branch=master)](https://coveralls.io/github/zzFluke/ResourceInventory?branch=master)
+[![Build](https://github.com/zzFluke/ResourceInventory/workflows/Java%20CI/badge.svg?branch=master)](https://github.com/zzFluke/ResourceInventory/actions?query=workflow%3A%22Java+CI%22+branch%3Amaster) [![Coverage Status](https://coveralls.io/repos/github/zzFluke/ResourceInventory/badge.svg?branch=master)](https://coveralls.io/github/zzFluke/ResourceInventory?branch=master)
 
 # Demo Web Application Project for Resource Inventory
 
 ## Developed with:
-Gradle, Spring Boot, Embedded Tomcat, Spring Data, Spring Data REST, JPA, Hibernate, Embedded (In-Memory) H2 Database, Apache Shiro, JOOQ, Swagger, 
+Gradle, Spring Boot, Embedded Tomcat, Spring Data, Spring Data REST, JPA, Hibernate, Embedded (In-Memory) H2 Database, Apache Shiro, JOOQ, Swagger
 
 ## Features:
 - Metadata Driven Resource Types and Resource Properties
