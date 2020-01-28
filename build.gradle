@@ -3,7 +3,6 @@ buildscript {
 		springBootVersion = '2.2.4.RELEASE'
 		springVersion = '5.2.1.RELEASE'
 		caverallsVersion = '2.9.0'
-		coberturaVersion = '3.0.0'
 		swaggerVersion = '3.0.0-SNAPSHOT'
 		swaggerUIVersion = '2.9.2'
 	}
@@ -18,7 +17,7 @@ buildscript {
 }
 
 plugins {
-    id 'net.saliman.cobertura' version "$coberturaVersion"
+    id 'jacoco'
     id 'com.github.kt3k.coveralls' version "$caverallsVersion"
 }
 
@@ -28,7 +27,12 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 
-cobertura.coverageFormats = ['html', 'xml'] // coveralls plugin depends on xml format repor
+jacocoTestReport {
+    reports {
+        xml.enabled = true // coveralls plugin depends on xml format report
+        html.enabled = true
+    }
+}
 
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
